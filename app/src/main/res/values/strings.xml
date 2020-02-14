@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Toast</string>
+    <string name="gryffindor">Gryffindor</string>
+    <string name="ravenclaw">Ravenclaw</string>
+    <string name="hufflepuff">Hufflepuff</string>
+    <string name="Slytherin">Slytherin</string>
+</resources>
