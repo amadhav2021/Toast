@@ -61,8 +61,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 TextView label = (TextView) v;
-                Toast.makeText(getApplicationContext(), "Processing...", Toast.LENGTH_SHORT).show();
-                String text = ((TextView) v).getText().toString();
+                String text = label.getText().toString();
+                Toast.makeText(getApplicationContext(), text + ": " + preferences.getInt(text, 1), Toast.LENGTH_SHORT).show();
+
                 int val = preferences.getInt(text, 0) + 1;
                 editor.putInt(text, val);
                 editor.apply();
